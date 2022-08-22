@@ -71,27 +71,3 @@ def test_torch_main(net):
 if __name__ == '__main__':
   net = models.resnet101(pretrained=True).to('cpu')
   test_torch_main(net)
-
-
-
-# python test_torch.py
-
-'''
-Baseline Inference Time:  0.045760777950286866
-Baseline Accuracy:  75.4 %
-98M
-'''
-
-'''
-Baseline Inference Time:  0.07823844003677369
-Baseline Accuracy:  75.5 %
-'''
-
-# source activate py3.6
-# source  ~/env/trt/bin/activate
-# export LD_LIBRARY_PATH=/data1/cv/softs/TensorRT-7.2.1.6/lib:/usr/local/lib64:/usr/local/cuda-11.1/lib64:$LD_LIBRARY_PATH
-
-
-# onnx 1.6.0
-
-# /data3/mushu/env/trt/lib64/python3.6/site-packages/torchvision/models
