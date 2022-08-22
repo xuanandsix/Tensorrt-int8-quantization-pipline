@@ -96,14 +96,3 @@ def test_int8trt_main():
 
 if __name__ == "__main__":
     test_int8trt_main()
-    
-
-'''
-Tensorrt Int8 Inference Time:  0.002646285533905029
-Tensorrt Int8 Accuracy:  73.5 %
-'''
-
-'''
-Tensorrt Int8 Inference Time:  0.0013422067165374755
-Tensorrt Int8 Accuracy:  73.8 %
-'''
