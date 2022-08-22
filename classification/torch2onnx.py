@@ -19,5 +19,3 @@ def torch2onnx_main(net):
 if __name__ == '__main__':
   net = models.resnet101(pretrained=True).to('cpu')
   torch2onnx_main(net)
-
-# 98M
