@@ -7,6 +7,7 @@ a simple pipline of int8 quantization based on tensorrt.
 ```
 wget https://hanlab.mit.edu/files/OnceForAll/ofa_cvpr_tutorial/imagenet_1k.zip
 unzip 'imagenet_1k.zip'
+mkdir model
 ```
 #### 2、eval the float32 model performance.
 ```
