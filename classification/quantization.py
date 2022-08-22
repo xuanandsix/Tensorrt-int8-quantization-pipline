@@ -1,4 +1,3 @@
-# Canyu Xie
 import torch
 import datetime
 import time
@@ -112,19 +111,3 @@ def quantization_main(model):
 if __name__ =='__main__':
     model = models.resnet101(pretrained=True).to('cpu')
     quantization_main(model)
-
-# python quantization.py --pth_model_path model.pth  --onnx_model_path model.onnx --trt_model_path modelInt8.engine
-
-'''
-==> Torch time: 0.20731 ms
-==> TRT time: 0.00232 ms
-==> TRT INT8 time: 0.00063 ms
-
-25M 
-'''
-
-'''
-==> Torch time: 0.05484 ms
-==> TRT time: 0.00401 ms
-==> TRT INT8 time: 0.00113 ms
-'''
