@@ -30,3 +30,6 @@ or run a pipline including the above steps.
 python tensorrt_PTA_classification_pipline.py
 ```
 
+### TO DO
+- [ ] example for detection.
+- [ ] example for segmention.
