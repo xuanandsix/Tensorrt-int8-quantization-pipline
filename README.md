@@ -13,15 +13,15 @@ mkdir model
 ```
 python test_torch.py
 ```
-#### 2、convert to onnx model.
+#### 3、convert to onnx model.
 ```
 python torch2onnx.py
 ```
-#### 3、 quantization int8 trt model.
+#### 4、 quantization int8 trt model.
 ```
 python quantization.py
 ```
-#### 4、eval the int8 model performance.
+#### 5、eval the int8 model performance.
 ```
 python test_int8trt.py
 ```
