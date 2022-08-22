@@ -5,7 +5,7 @@ a simple pipline of int8 quantization based on tensorrt.
 
 #### 1、Choose a model and prepare a calibration dataset，like resnet101 training from imagenet1k.
 ```
-wget 'https://s3.amazonaws.com/pytorch-tutorial-assets/imagenet_1k.zip'
+wget https://hanlab.mit.edu/files/OnceForAll/ofa_cvpr_tutorial/imagenet_1k.zip
 unzip 'imagenet_1k.zip'
 ```
 #### 2、eval the float32 model performance.
