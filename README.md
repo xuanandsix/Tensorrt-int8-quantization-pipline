@@ -30,6 +30,28 @@ or run a pipline including the above steps.
 python tensorrt_PTA_classification_pipline.py
 ```
 
+<img src="https://github.com/xuanandsix/Tensorrt-int8-quantization-pipline/raw/main/classification/shot.jpg" width="400px" height="380px">
+
+| model | accuracy | time | size |
+| :-: |:-:| :-:|:-:|
+| float32(pth)|0.759 | 0.0799 |171M|
+| int8(trt)|0.738 | 0.0013 | 44M |
+
+#### Note
+You can replace resnet101 with your network. If your dataset structure is different, you need to modify some code about dataset.
+```
+# test_torch.py torch2onnx.py quantization.py
+if __name__ == "__main__":
+    net = models.resnet101(pretrained=True).to('cpu')
+```
+or
+```
+# tensorrt_PTA_classification_pipline.py
+if __name__ == "__main__":
+    net = models.resnet101(pretrained=True).to('cpu')
+```
+
+
 ### TO DO
 - [ ] example for detection.
 - [ ] example for segmention.
