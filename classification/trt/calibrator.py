@@ -103,8 +103,8 @@ class ResNetEntropyCalibrator(trt.IInt8EntropyCalibrator2):
             return None
 
         current_batch = int(self.current_index / self.batch_size)
-        # if current_batch % 10 == 0:
-        #     print("Calibrating batch {:}, containing {:} images".format(current_batch, self.batch_size))
+        if current_batch % 10 == 0:
+            print("Calibrating batch {:}, containing {:} images".format(current_batch, self.batch_size))
 
         batch = self.dataset_test.get_batch_images(self.current_index, self.batch_size)
 
