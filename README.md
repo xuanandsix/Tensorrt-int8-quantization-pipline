@@ -2,7 +2,9 @@
 a simple pipline of int8 quantization based on tensorrt.  
 
 ## Example for classification
-
+```
+cd classification
+```
 #### 1、Choose a model and prepare a calibration dataset，like resnet101 training from imagenet1k.
 ```
 wget https://hanlab.mit.edu/files/OnceForAll/ofa_cvpr_tutorial/imagenet_1k.zip
