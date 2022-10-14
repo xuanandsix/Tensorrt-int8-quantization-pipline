@@ -1,7 +1,8 @@
 # Tensorrt-int8-quantization-pipline
 a simple pipline of int8 quantization based on tensorrt.  
+[classification](#classification) [detection](#detection)
 
-## Example for classification
+## Example for classification <a name="classification"></a>
 ```
 cd classification
 ```
@@ -53,7 +54,7 @@ or
 if __name__ == "__main__":
     net = models.resnet101(pretrained=True).to('cpu')
 ```
-## Example for detection
+## Example for detection <a name="detection"></a>
 ```
 cd detection
 ```
