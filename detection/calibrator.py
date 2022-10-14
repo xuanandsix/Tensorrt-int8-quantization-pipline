@@ -31,9 +31,6 @@ class Calibrator(trt.IInt8EntropyCalibrator):
         return self.stream.batch_size
 
     def get_batch(self, names):
-        #print("############################################################")
-        #print(names)
-        #print("############################################################")
         batch = self.stream.next_batch()
         if not batch.size:   
             return None
